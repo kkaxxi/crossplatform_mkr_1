@@ -11,8 +11,11 @@ namespace Mkr_1.Mkr_1
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             // Задання шляху до файлів
-            string inputFilePath = Path.Combine("Mkr_1", "Mkr_1", "INPUT.TXT");
-            string outputFilePath = Path.Combine("Mkr_1", "Mkr_1", "OUTPUT.TXT");
+          
+           string inputFilePath = Path.Combine(Directory.GetCurrentDirectory(), "INPUT.TXT");
+ string outputFilePath = Path.Combine(Directory.GetCurrentDirectory(), "OUTPUT.TXT");
+
+          
 
             // Перевірка, чи існує вхідний файл
             if (!File.Exists(inputFilePath))
